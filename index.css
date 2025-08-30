@@ -1,0 +1,108 @@
+:root {
+    --blue: #7aa2f7;
+    --red: #f7768e;
+    --dark: #1e1e2e;
+    --black: #11111b;
+    --yellow: #f9e2af;
+    --green: #a6e3a1;
+    --lavender: #b4befe;
+    --white: #cdd6f4;
+    --orange: #fab387;
+    --shadow: #1e1e2e;
+}
+
+@font-face {font-family: C; src: url('assets/codenewroman.otf');}
+
+body {
+    background-image: url('assets/krul.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+    font-family: C;
+    font-weight: bold;
+    color: var(--white);
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+.main {
+    height: 500px;
+    width: 100%;
+    background: var(--shadow);
+    display: flex;
+    border-radius: 25px;
+    border: 4px solid var(--white);
+}
+
+.banner {
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-right: 4px solid var(--white);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: math(100% - 15px);
+    margin: 15px;
+}
+
+.row-top, .row-bottom {
+    width: calc(100% - 30px);
+    height: calc(100% - 15px);
+    margin: 15px;
+    border-radius: 25px;
+    background: var(--shadow);
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+.row-bottom {
+    margin-top: 7.5px;
+}
+
+.row-top {
+    margin-bottom: 7.5px;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    background: var(--black);
+    border-radius: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 4px solid var(--white);
+    width: 130px;
+    text-align: center;
+}
+
+.item:hover {
+    background: var(--white);
+    color: var(--black);
+    border: 4px solid var(--black);
+}
+
+h1 {
+    font-size: 120px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.item-icon {
+    filter: invert;
+    width: 80px;
+}
